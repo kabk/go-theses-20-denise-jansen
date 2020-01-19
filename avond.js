@@ -16,7 +16,9 @@ var time = today.getHours()
 console.log(time)
 
 if(time > 1 && time < 5){
-	loadjscssfile("thesis.css", "css") ////dynamically load and add this .css file
+	// loadjscssfile("thesis.css", "css") ////dynamically load and add this .css file
+    window.location.href = "thesis_blur.html";
+
 }
 
 

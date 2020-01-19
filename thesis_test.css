@@ -1,6 +1,271 @@
 * 
 #blur{
-	font-size: 25px;
+	font-size: 30px;
 	color: transparent;
 	text-shadow: 0 0 15px #000;
+}
+
+<style>
+.responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+/**
+ * Initialiazing a `footnotes` counter on the wrapper
+ */
+article {
+  counter-reset: footnotes;
+}
+
+/**
+ * Inline footnotes references
+ * 1. Increment the counter at each new reference
+ * 2. Reset link styles to make it appear like regular text
+ */
+a[aria-describedby="footnote-label"] {
+  counter-increment: footnotes; /* 1 */
+  text-decoration: none; /* 2 */
+  color: inherit; /* 2 */
+  cursor: default; /* 2 */
+  outline: none; /* 2 */
+}
+
+/**
+ * Actual numbered references
+ * 1. Display the current state of the counter (e.g. `[1]`)
+ * 2. Align text as superscript
+ * 3. Make the number smaller (since it's superscript)
+ * 4. Slightly offset the number from the text
+ * 5. Reset link styles on the number to show it's usable
+ */
+a[aria-describedby="footnote-label"]::after {
+  content: '[' counter(footnotes) ']'; /* 1 */
+  vertical-align: super; /* 2 */
+  font-size: 0.5em; /* 3 */
+  margin-left: 2px; /* 4 */
+  color: blue; /* 5 */
+  text-decoration: underline; /* 5 */
+  cursor: pointer; /* 5 */
+}
+
+/**
+ * Resetting the default focused styles on the number
+ */
+a[aria-describedby="footnote-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+
+ol {
+	color: blue;
+}
+
+
+
+
+
+
+.smallimage4 {
+  position: absolute;
+  width: 40%;
+  top: 130%;
+  left: 20%;
+}
+
+.smallimage5 {
+  position: absolute;
+  width: 40%;
+  top: 230%;
+  left: 20%;
+}
+
+.smallimage6 {
+  position: absolute;
+  width: 40%;
+  top: 505%;
+  left: 20%;
+}
+
+.smallimage7 {
+  position: absolute;
+  width: 40%;
+  top: 545%;
+  left: 20%;
+}
+
+.smallimage8 {
+  position: absolute;
+  width: 40%;
+  top: 598%;
+  left: 20%;
+}
+
+.smallimage9 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage10 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage11 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage12 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage13 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage14 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage15 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage16 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage17 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage18 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage19 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage20 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage21 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage22 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage23 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage24 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage25 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage26 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage27 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage28 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage29 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage30 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage31 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
+}
+
+.smallimage32 {
+  position: absolute;
+  width: 40%;
+  top: 300%;
+  left: 50%;
 }
